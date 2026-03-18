@@ -1,5 +1,5 @@
 <h1 align="center">
-    Complain MANAGEMENT SYSTEM
+    Complain Management System
 </h1>
 
 <h3 align="center">

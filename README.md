@@ -1,27 +1,26 @@
 <h1 align="center">
-    SCHOOL MANAGEMENT SYSTEM
+    COMPLAINT MANAGEMENT SYSTEM
 </h1>
 
 <h3 align="center">
-Streamline school management, class organization, and add students and faculty.<br>
-Seamlessly track attendance, assess performance, and provide feedback. <br>
-Access records, view marks, and communicate effortlessly.
+Complain Management System for Internet Service Provider <br>
+
 </h3>
 
 <br>
-[Youtube Video](https://youtu.be/ol650KwQkgY?si=rKcboqSv3n-e4UbC)
-<br><br>
-[LinkedIn](https://www.linkedin.com/in/yogndr/)
+
+[LinkedIn](https://www.linkedin.com/in/monayem-hossain/)
 
 # About
 
-The School Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline school management, class organization, and facilitate communication between students, teachers, and administrators.
+The Complain Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline complain management, employee management, and task management  among employee, manager, and administrators.
 
 ## Features
 
-- **User Roles:** The system supports three user roles: Admin, Teacher, and Student. Each role has specific functionalities and access levels.
+- **User Roles:** The system supports three user roles: Admin, Manager, and Employee. Each role has specific functionalities and access levels.
 
-- **Admin Dashboard:** Administrators can add new students and teachers, create classes and subjects, manage user accounts, and oversee system settings.
+- **Admin Dashboard:** Administrators can 1. create, update, delete, retrive admin, manager, employee <br/>
+                                          2.  Retrive pending complain, completed complain
 
 - **Attendance Tracking:** Teachers can easily take attendance for their classes, mark students as present or absent, and generate attendance reports.
 

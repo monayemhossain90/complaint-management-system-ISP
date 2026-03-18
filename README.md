@@ -10,7 +10,7 @@ It accept complains, assign to the employee
 
 <p>Admin Panel https://complaint-management-system-isp-adm.vercel.app/</p>
 <p>Manager Panel https://complaint-management-system-isp-man.vercel.app/</p>
-<p> https://complaint-management-system-isp-emp.vercel.app/</p>
+<p> Employee Panel  https://complaint-management-system-isp-emp.vercel.app/</p>
 
 <br>
 [LinkedIn](https://www.linkedin.com/in/monayem-hossain/)

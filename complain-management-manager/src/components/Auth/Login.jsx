@@ -16,7 +16,6 @@ const Login = () => {
   const dispatch = useDispatch();
   const error = useSelector((state) => state.auth.LoginError);
 
-  // local states for inputs
   const [phonenumber, setPhonenumber] = useState("");
   const [password, setPassword] = useState("");
   const [formError, setFormError] = useState({});
@@ -24,7 +23,6 @@ const Login = () => {
   const validateForm = () => {
     let errors = {};
 
-    // Phone validation
     if (!phonenumber) {
       errors.phonenumber = "Phone number is required";
     } else if (!/^01[3-9]\d{8}$/.test(phonenumber)) {
@@ -35,7 +33,6 @@ const Login = () => {
       errors.phonenumber = "Phone number cannot exceed 14 digits";
     }
 
-    // Password validation
     if (!password) {
       errors.password = "Password is required!";
     } else if (password.length < 6) {
@@ -58,9 +55,18 @@ const Login = () => {
     login({ phonenumber, password });
   };
 
+  // ✅ Auto-fill handler
+  const handleAutoFill = () => {
+    setPhonenumber("01737800755");
+    setPassword("123456");
+  };
+
   return (
     <div className="min-h-screen grid place-items-center form-container">
-     <h1 className="text-center text-4xl font-bold mb-3">Complain Management System Manager</h1>
+      <h1 className="text-center text-4xl font-bold mb-3">
+        Complain Management System Manager
+      </h1>
+
       <Card
         color="transparent"
         className="p-7 bg-white w-[90%] sm:w-[450px]"
@@ -69,18 +75,18 @@ const Login = () => {
         <Typography variant="h4" color="blue-gray">
           Manager Login
         </Typography>
+
         <Typography color="gray" className="mt-1 font-normal">
           Enter your phonenumber & password to login
         </Typography>
 
         {error && <Error message={error} />}
-        <br />
 
         <form
           onSubmit={onSubmit}
-          className="py-4 grid grid-cols-1 w-[100%] gap-6"
+          className="py-4 grid grid-cols-1 w-full gap-6"
         >
-          {/* Phone number */}
+          {/* Phone */}
           <div>
             <Input
               size="lg"
@@ -114,12 +120,11 @@ const Login = () => {
             )}
           </div>
 
+          {/* Login Button */}
           <div className="w-full">
             <Button
               disabled={isLoading}
-              className={`${
-                isLoading && "capitalize"
-              } w-full flex gap-3 items-center justify-center disabled:cursor-not-allowed`}
+              className="w-full flex gap-3 items-center justify-center"
               type="submit"
             >
               {isLoading ? (
@@ -127,9 +132,24 @@ const Login = () => {
                   <Spinner className="h-4 w-4" /> Processing...
                 </>
               ) : (
-                <>Login</>
+                "Login"
               )}
             </Button>
+          </div>
+
+          {/* 🔥 Eye-catching Demo Button */}
+          <div className="w-full text-center mt-2">
+            <Button
+              type="button"
+              onClick={handleAutoFill}
+              className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-200"
+            >
+              🚀 Try Demo Manager Account
+            </Button>
+
+            <p className="text-xs text-gray-500 mt-2">
+              Click to auto-fill demo credentials
+            </p>
           </div>
         </form>
       </Card>

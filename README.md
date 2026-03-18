@@ -1,26 +1,30 @@
 <h1 align="center">
-    COMPLAINT MANAGEMENT SYSTEM
+    Complain MANAGEMENT SYSTEM
 </h1>
 
 <h3 align="center">
-Complain Management System for Internet Service Provider <br>
+Complain Management system manage the complain of users of Internet service provider<br>
 
+It accept complains, assign to the employee
 </h3>
 
-<br>
 
+<br>
 [LinkedIn](https://www.linkedin.com/in/monayem-hossain/)
 
 # About
 
-The Complain Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline complain management, employee management, and task management  among employee, manager, and administrators.
+The Complain Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline complain management, task management, and facilitate communication between employee, manager, and administrators.
 
 ## Features
 
-- **User Roles:** The system supports three user roles: Admin, Manager, and Employee. Each role has specific functionalities and access levels.
+- **User Roles:** The system supports three user roles: Admin, manager, and employee. Each role has specific functionalities and access levels.
 
-- **Admin Dashboard:** Administrators can 1. create, update, delete, retrive admin, manager, employee <br/>
-                                          2.  Retrive pending complain, completed complain
+- **Admin Dashboard:** Administrators can 
+ 1. add,update, delete, retrive employee and manager,admin, <br>
+ 2. Update,Delete and retrive  complain. <br>
+ 3. Oversee system settings. <br>
+ 4. See and delete the complain history
 
 - **Attendance Tracking:** Teachers can easily take attendance for their classes, mark students as present or absent, and generate attendance reports.
 

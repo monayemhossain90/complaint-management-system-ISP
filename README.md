@@ -20,18 +20,32 @@ The Complain Management System is a web-based application built using the MERN (
 
 - **User Roles:** The system supports three user roles: Admin, manager, and employee. Each role has specific functionalities and access levels.
 
-- **Admin Dashboard:** Administrators can 
- 1. add,update, delete, retrive employee and manager,admin, <br>
- 2. Update,Delete and retrive  complain. <br>
- 3. Oversee system settings. <br>
- 4. See and delete the complain history
+- **Admin Panel:** Administrators can 
+        1. See the admin dashboard. E.g total pending, completed,done complain, total users.<br> 
+        2. add,update, delete, retrive employee and manager,admin, <br>
+        3. Update,Delete and retrive  complain. <br>
+        4. Oversee system settings. <br>
+        5. See and delete the complain history
+
+ - **Manager Panel:** Maneger  can 
+ 1. See the manager dashboard. E.g total pending complain, completed complain,total users<br> 
+ 2. See the all  employee <br>
+ 3. Update and retrive  all complain. <br>
+ 4. Create complain and assign complain to employee. <br>
+ 5. See  the complain history
+
+
+ - **Employee Panel:** Employee  can 
+ 1. See the own  dashboard. E.g total own pending complain, completed complain<br> 
+ 2. See own complain history <br>
+ 3. Update the status of own pending complain. <br>
 
 
 - **Communication:** Users can communicate effortlessly through the system. Manager  send messages to employee and complainer when new complain created and assigned to an employee. And when complain resolved by employee a sms is send from employee to  manager. Finally  manager change the status of complain from completed to done.
 
 ## Technologies Used
 
-- Frontend: React.js, Tailwind css, Redux
+- Frontend: React.js, Tailwind css, vanila css, Redux
 - Backend: Node.js, Express.js
 - Database: MongoDB
 

@@ -26,11 +26,9 @@ class SessionHelper {
     }
 
     
-
-    logout(){
-        localStorage.clear();
-        window.location.href="/login"
-    }
+logout() {
+  localStorage.clear();
+}
 
 
 }

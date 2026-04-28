@@ -25,12 +25,11 @@ class SessionHelper {
         return localStorage.getItem("phonenumber")
     }
 
-    
+      logout() {
+    localStorage.clear();
+  }
 
-    logout(){
-        localStorage.clear();
-        window.location.href="/login"
-    }
+   
 
 
 }

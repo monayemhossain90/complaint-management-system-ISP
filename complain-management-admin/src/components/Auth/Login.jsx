@@ -265,12 +265,10 @@ const Login = () => {
                 onClick={handleAutoFill}
                 className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-200"
               >
-                🚀 Try Demo Admin Account
+                🚀 Click to auto-fill demo credentials
               </Button>
 
-              <p className="text-xs text-gray-500 mt-2">
-                Click to auto-fill demo credentials
-              </p>
+              
             </div>
           </form>
         </Card>
